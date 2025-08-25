@@ -2,10 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
-html, body, #__next {
+:root {
+  --background: #0b0f16;
+  --foreground: #e5e7eb;
+}
+
+html, body {
   height: 100%;
 }
 
 body {
-  @apply bg-white text-gray-900 antialiased;
+  color: var(--foreground);
+  background: var(--background);
 }

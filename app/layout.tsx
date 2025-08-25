@@ -1,19 +1,17 @@
-import type { Metadata } from 'next';
 import './globals.css';
+import type { ReactNode } from 'react';
 
-export const metadata: Metadata = {
+export const metadata = {
   title: 'Hello World',
-  description: 'A simple Hello World page built with Next.js and Tailwind CSS',
+  description: 'Simple Hello World with Next.js and Tailwind CSS',
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        {children}
+      </body>
     </html>
   );
 }
